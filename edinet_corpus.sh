@@ -2,14 +2,14 @@
 
 
 doc_types=(
-    # "annual" 
-    "quarterly" 
+    "annual" 
+    # "quarterly" 
     # "semiannual" 
     # "annual_ammended" 
     # "quarterly_ammended" 
     # "semiannual_ammended"
 )
-for year in {2019..2019}
+for year in {2020..2022}   # 12/1に2022まで終了。次は2023-2025を行う。
 do 
     for doc_type in "${doc_types[@]}"
     do
