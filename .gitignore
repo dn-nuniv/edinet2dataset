@@ -83,7 +83,7 @@ profile_default/
 ipython_config.py
 
 # ダウンロードしたEDINETデータ
-data/
+data/.
 edinet_corpus/
 
 # ついでに解析用の一時ファイルとか
