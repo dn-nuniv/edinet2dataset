@@ -1,5 +1,7 @@
 from argparse import ArgumentParser
 import os
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), "../src"))
 import json
 from edinet2dataset.downloader import Downloader
 from concurrent.futures import ThreadPoolExecutor, as_completed

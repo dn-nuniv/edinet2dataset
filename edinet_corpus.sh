@@ -9,7 +9,7 @@ doc_types=(
     # "quarterly_ammended" 
     # "semiannual_ammended"
 )
-for year in {2020..2022}   # 12/1に2022まで終了。次は2023-2025を行う。
+for year in {2025..2026}   # 12/1に2022まで終了。次は2023-2025を行う。
 do 
     for doc_type in "${doc_types[@]}"
     do
@@ -25,7 +25,7 @@ do
         fi
 
         echo "doc_type: $doc_type, start_date: $start_date, end_date: $end_date"
-        python scripts/prepare_edinet_corpus.py --doc_type "$doc_type" --start_date "$start_date" --end_date "$end_date"
+        uv run python scripts/prepare_edinet_corpus.py --doc_type "$doc_type" --start_date "$start_date" --end_date "$end_date"
     done
     done
 done
