@@ -85,6 +85,7 @@ ipython_config.py
 # ダウンロードしたEDINETデータ
 data/
 edinet_corpus/
+out/
 
 # ついでに解析用の一時ファイルとか
 *.zip
